@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HA140460</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- Navbar -->
+<body style="background-color: #090F1D">
+<nav class="navbar navbar-expand-sm fixed-top" style="background-color: #101B32">
+        <a class="nav-link" href="index.html"> 
+            <img src="Logo.png" width="50px" style="border-radius: 16px;">
+        </a>
+
+        <ul class="navbar-nav ml-auto" style="text-align: center;">
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="#About" style="color: #0099cc; font-family: poppins;"><b> About Me</b></a>
+            </li>
+
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="#Portfolio" style="color: #0099cc; font-family: poppins;"><b> Portfolio</b> </a>
+            </li>
+
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="#Contact" style="color: #0099cc; font-family: poppins;"><b> Contact </b></a>
+            </li>
+        </ul>
+    </nav>
+    <br><br><br><br><br><br><br><br><br><br><br>
+<!-- About Me -->    
+<section>    
+    <h1 style="font-family: poppins;text-align: center;color: #00FFE0;padding: 10px;"><b>WELCOME TO MY PORTFOLIO</b></h1>
+    <h4 style="font-family: poppins;text-align: center;color: white;font-size: 90%;">This portfolio is for Web Design 2</h4>
+    <h4 style="font-family: poppins;text-align: center;color: white;font-size: 90%;">Designed by Pham Nhat Long - Kil</h4>
+    <h4 style="font-family: poppins;text-align: center;color: white;font-size: 90%;">HA140460 - GD1405</h4>
+    <h4 style="font-family: poppins;text-align: center;color: white;font-size: 90%;">Lecturer: Ms.Shruthi</h4>
+</section>
+<br><br><br><br><br><br><br><br>
+<section id="About">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+             <img src="Me.png" style="width: 100%; padding: 100px"> 
+            </div>
+            <div class="col">
+                <h2 style="font-family: poppins;color: #00FFE0;"><b>About Me</b></h2>
+                <p style="font-family: poppins;color: white"> Greeting, my name is Pham Nhat Long but by any means, call me Kil for short. I am currently student at FPT University, take part in Graphic Design Course. Despite my study, I am still more passion with drawing and animation, even though I cant deny the fact that my time at the university have taught me a lot more skills and experience. I mainly draw digitally and drawing anthro, furry art. </p>
+                <br>
+                <h2 style="font-family: poppins;color: #00FFE0;"><b>About This Subject</b></h2>
+                <h4 style="font-family: poppins;color: #00FFE0;font-size: 70%;"><i>Thank You Ms.Shruthi <3</i></h4>
+                <p style="font-family: poppins;color: white"> When I first got into University, I was study Graphic Design right away, I was first started in Computer Science. But I quickly transfered after just one semester just cause my bad experience with coding. When I start studying this subject, I was afraid, cause I really hate coding, it so mind-boggling. But thanks to Ms.Shruthi, who have guided me and others, I have start to have different view in coding. Even though I still cant understand high and advance coding but at least I now have basic understanding of coding, to design a website, look out for error and correct it. Though my products wasnt nowhere near "good" for a designer, but I still proud and have fun with it. So at the bottom of my heart, thank you Ms.Shruthi for teach us. </p>
+
+
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+<br><br><br><br><br><br><br><br>
+<!-- My Progress -->
+<section id="Portfolio">
+<h1 style="font-family: poppins;text-align: center;color: #00FFE0;padding: 10px;"><b>My Progress At The Course</b></h1>
+<h1 style="font-family: poppins;text-align: center;color: white;padding: 10px;"><b>-------</b></h1>
+<br><br><br><br><br><br>    
+<style>
+.button {
+  border-radius: 4px;
+  background-color: #101B32;
+  border: none;
+  color: #00FFE0;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.container-img {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #101B32;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  font-family: poppins;
+  color: #00FFE0;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+    <div class="container">
+        <div class="row">
+            <div class="col" style="padding-right: 100px">
+            <h2 style="font-family: poppins;color: #00FFE0;">Day 1: Basic Coding</h2>
+            <p style="font-family: poppins;color: white">On first day, we got used to some basic code, like how to change text-size, text-align, coloring and also import an image. The main application we used for coding was Sublime Text 3.</p>
+            <button class="button"><span><a href="https://mckiller1910.github.io/Day1/">Demo Website</a></span></button> 
+                
+            </div>
+            <div class="col" style="padding-left: 100px">
+                <div class="container-img">
+                  <img src="Day1.png" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">Day 1 Output</div>
+                  </div>
+                </div>     
+            </div>  
+        </div>
+        <br><br><br><br>
+        <div class="row">
+            <div class="col" style="padding-right: 100px">
+                <div class="container-img">
+                  <img src="Day2.jpg" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">Day 2 Output</div>
+                  </div>
+                </div>     
+            </div>
+            <div class="col" style="padding-left: 100px">
+            <h2 style="font-family: poppins;color: #00FFE0;">Day 2: Basic Website</h2>
+            <p style="font-family: poppins;color: white">On second day, using the knowledge we gather, we set up our first basic website with proper text padding, image and orientation. We also needed to link up our own website. Though we were using basic HTML code, the styling were very limited but that didnt stop us from looking for new and creative way to designing our website.</p>
+            <button class="button"><a href="https://mckiller1910.github.io/Day2.github.io/"><span>Demo Website</span></a></button>   
+            </div>  
+        </div>
+        <br><br><br><br>
+        <div class="row">
+            <div class="col" style="padding-right: 100px">
+            <h2 style="font-family: poppins;color: #00FFE0;">Day 3: Bootstrap 4 Coding</h2>
+            <p style="font-family: poppins;color: white">From onward, we started to say goodbye to the basic code and look into more advance and professional code, Bootstrap 4. With bootstrap, we could finally start do some proper text-styling, give a better feel to our website. Other than that we also learnt some new code for different pages/sections of a website. This was very fun in my opinion.</p>
+            <button class="button"><a href="https://mckiller1910.github.io/DarkSecret.github.io/"><span>Demo Website</span></a></button> 
+                
+            </div>
+            <div class="col" style="padding-left: 100px">
+                <div class="container-img">
+                  <img src="Day3.png" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">Day 3 Output</div>
+                  </div>
+                </div>     
+            </div>  
+        </div>
+        <br><br><br><br>
+        <div class="row">
+            <div class="col" style="padding-right: 100px">
+                <div class="container-img">
+                  <img src="Day4.png" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">Day 4 Output</div>
+                  </div>
+                </div>     
+            </div>
+            <div class="col" style="padding-left: 100px">
+            <h2 style="font-family: poppins;color: #00FFE0;">Day 4: About Us/Gallery</h2>
+            <p style="font-family: poppins;color: white">After getting used to Bootstrap and finishing our landing page. Today we continued to coding the "About Us" and "Gallery" page and checking for common error. Not only that we also learnt the basic "container" coding theory, this was very handy and crucial lesson. And thus, finishing our first assignment.</p>
+            <button class="button"><a href="https://mckiller1910.github.io/DarkSecret.github.io/AboutUs.html"><span>Demo Website</span></a></button>   
+            </div>  
+        </div>
+        <br><br><br><br>
+        <div class="row">
+            <div class="col" style="padding-right: 100px">
+            <h2 style="font-family: poppins;color: #00FFE0;">Day 5: Coding With A Wireframe</h2>
+            <p style="font-family: poppins;color: white">With all the experience and knowledge we learnt from all the previous lesson, it was time to for ourselves coding a website based on a wireframe that Ms.Shruthi show us. Our main goal was to make a spa website and today was coding the landing page.</p>
+            <button class="button"><a href="https://mckiller1910.github.io/Spabunny.github.io/index.html"><span>Demo Website</span></a></button> 
+                
+            </div>
+            <div class="col" style="padding-left: 100px">
+                <div class="container-img">
+                  <img src="Day5.png" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">Day 5 Output</div>
+                  </div>
+                </div>     
+            </div>  
+        </div>
+        <br><br><br><br>
+        <div class="row">
+            <div class="col" style="padding-right: 100px">
+                <div class="container-img">
+                  <img src="Day6.png" alt="Avatar" class="image">
+                  <div class="overlay">
+                    <div class="text">Day 6 Output</div>
+                  </div>
+                </div>     
+            </div>
+            <div class="col" style="padding-left: 100px">
+            <h2 style="font-family: poppins;color: #00FFE0;">Day 6: Final Product</h2>
+            <p style="font-family: poppins;color: white">The last and final day of the course, I quickly finished up the other pages (aka About us and Service). I also making sure everything was working, everything was link up properly. We published our final product using Github. And that marked the end of our Assignment 2.</p>
+            <button class="button"><a href="https://mckiller1910.github.io/Spabunny.github.io/Service.html"><span>Demo Website</span></a></button>   
+            </div>  
+        </div>
+        <br><br><br><br>
+    </div>
+<br><br><br><br><br><br><br><br>
+<!-- Contact -->            
+</section>
+<section id="Contact">
+    <h1 style="font-family: poppins;text-align: center;color: #00FFE0;padding: 10px;"><b>Contact</b></h1>
+<h1 style="font-family: poppins;text-align: center;color: white;padding: 10px;"><b>-------</b></h1>
+<br><br><br><br><br><br>
+<div class="container">
+        <div class="row">
+            <div class="col" style="padding-right:100px">
+                <h2 style="font-family: poppins;color: #00FFE0;">You can reach me through here.</h2>
+                <p style="font-family: poppins;color: white">Phone: (+84)93 6302 914</p>
+                <p style="font-family: poppins;color: white">Email: phamnhatlog2000@gmail.com</p>
+                <p style="font-family: poppins;color: white">Discord: Kil #1265</p>
+                <br>
+                <h2 style="font-family: poppins;color: #00FFE0;"><b>If you wish to see more of my work please visit me at:  </b><a href="https://www.deviantart.com/drakil1910">www.deviantart.com/drakil1910</a></h2>
+                
+                
+            </div>
+            <div class="col">
+             <img src="Blueberry.png" style="width: 100%;"> 
+            </div>
+        </div>
+    </div>
+</section>
+<br><br><br><br><br><br><br><br>
+
+<!-- Footer -->
+<section>
+      <style>
+.footer {
+   position: sticky;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #101B32;
+   color: white;
+   text-align: center;
+   padding: 30px;
+}
+.fa {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 10px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+</style>
+<body>
+  <div class="footer">
+      <h3 style="color: #00FFE0; text-align: center; font-size: 90%;">Pham Nhat Long/Kil | HA140460 | <a href="https://www.deviantart.com/drakil1910">My DeviantArt</a></h3>
+      <br>
+
+      
+</head>
+<body>
+
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com" class="fa fa-facebook"></a>
+<a href="https://twitter.com/mckiller1910" class="fa fa-twitter"></a>
+<a href="https://www.google.com" class="fa fa-google"></a>
+<a href="https://www.youtube.com/channel/UCh4jHdUFkfHkWD0UGWXiNmw" class="fa fa-youtube"></a>
+      
+</body>
+
+
+      <p style="color: white; text-align: center; font-size: 50%;"> Copyright 2021. All rights reserved </p> 
+</div>
+</body>
+</section>
+
